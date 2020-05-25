@@ -21,4 +21,7 @@ The game has 3 levels of difficulty with different time limit of the player to m
 ### Two Player One Device 
 <img src="./screenshots/screencapture-2.png" width="75%"/>
 
+### Two Player Two Device 
+<img src="./screenshots/Two-Player-Two-Device.gif" width="75%"/>
+
 
