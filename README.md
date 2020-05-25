@@ -8,3 +8,7 @@ The game has 3 levels of difficulty with different time limit of the player to m
 - Easy (10 seconds)
 - Medium (7 seconds)
 - Hard (5 seconds)
+
+## Installation
+
+``` npm install ```
