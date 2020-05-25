@@ -1,0 +1,204 @@
+.App {
+  text-align: center;
+  margin: 0 auto;
+  height: 100vh;
+  color: white;
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.center-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.color-blue {
+  color: blue;
+}
+
+.color-red {
+  color: red;
+}
+
+.title {
+  padding: 20px 0px;
+}
+.striked {
+  color: black;
+}
+.tile {
+  width: 50px;
+  height: 50px;
+  display: table-cell;
+  border: 2px solid white;
+  padding: 20px;
+  font-size: 40px;
+  cursor: default;
+}
+
+.tile.tile-1 {
+  border-top: 0px;
+  border-left: 0px;
+}
+.tile.tile-2 {
+  border-top: 0px;
+}
+.tile.tile-3 {
+  border-top: 0px;
+  border-right: 0px;
+}
+.tile.tile-4 {
+  border-left: 0px;
+}
+.tile.tile-6 {
+  border-right: 0px;
+}
+.tile.tile-7 {
+  border-bottom: 0px;
+  border-left: 0px;
+}
+.tile.tile-8 {
+  border-bottom: 0px;
+}
+.tile.tile-9 {
+  border-bottom: 0px;
+  border-right: 0px;
+}
+.pointer{
+  cursor: pointer;
+}
+
+span.symbol {
+  font-size: 25px;
+  padding: 0px 10px;
+}
+
+.legend {
+  margin: 15px auto;
+}
+
+.text-decor-none {
+  text-decoration: none;
+}
+.options {
+  padding: 10px;
+  margin: unset;
+  color: white;
+}
+.options.active {
+  color: darkslategrey;
+}
+.options:hover {
+  color: darkslategrey;
+}
+.difficulty-list .options h2,
+.difficulty-list .options h3 {
+  margin: 0px;
+}
+
+.back::before{
+  content: '\276E';
+  padding-right: 10px;
+  font-size: inherit;
+}
+
+.link {
+  color: white;
+}
+
+.multi-device .btn {
+  padding: 10px;
+  min-width: 75px;
+  border: none;
+  border-radius: 10px;
+  margin: 20px;
+  font-size: 15px;
+  background-color: whitesmoke;
+}
+.text-box {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 15px;
+  opacity: 0.7;
+}
+.text-box:focus {
+  outline: none;
+}
+.error {
+  font-size: 12px;
+  color: red;
+}
+
+/* Sets the containers height and width */
+.base-timer {
+  position: relative;
+  height: 70px;
+  width: 70px;
+  margin: 0px auto;
+}
+
+/* Removes SVG styling that would hide the time label */
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+/* The SVG path that displays the timer's progress */
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: lightslategray;
+}
+
+.base-timer__label {
+  position: absolute;
+  
+  /* Size should match the parent container */
+  width: 70px;
+  height: 70px;
+  
+  /* Keep the label aligned to the top */
+  top: 0;
+  
+  /* Create a flexible box that centers content vertically and horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Sort of an arbitrary number; adjust to your liking */
+  font-size: 24px;
+}
+
+.base-timer__path-remaining {
+  /* Just as thick as the original ring */
+  stroke-width: 7px;
+
+  /* Rounds the line endings to create a seamless circle */
+  stroke-linecap: round;
+
+  /* Makes sure the animation starts at the top of the circle */
+  transform: rotate(90deg);
+  transform-origin: center;
+
+  /* One second aligns with the speed of the countdown timer */
+  transition: 1s linear all;
+
+  /* Allows the ring to change color when the color value updates */
+  stroke: green;
+}
+
+.base-timer__svg {
+  /* Flips the svg and makes the animation to move left-to-right */
+  transform: scaleX(-1);
+}
+
+@media only screen and (max-width: 480px) {
+  .center-content {
+    width: 280px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+}
