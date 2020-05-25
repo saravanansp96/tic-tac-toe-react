@@ -16,9 +16,9 @@ The game has 3 levels of difficulty with different time limit of the player to m
 ## Screen Shots
 
 ### Home Screen
-<img src="./screenshots/screencapture-1.png" />
+<img src="./screenshots/screencapture-1.png" width="75%"/>
 
 ### Two Player One Device 
-<img src="./screenshots/screencapture-2.png" />
+<img src="./screenshots/screencapture-2.png" width="75%"/>
 
 
