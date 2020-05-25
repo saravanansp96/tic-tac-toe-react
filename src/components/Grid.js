@@ -127,9 +127,10 @@ class Grid extends React.Component {
         const SYMBOL = (this.state.turn % 2 === 0) ? "X" : "O";
         let newState = { ...this.state };
 
-        this.stopWatch.current.reset();
-
         if (this.props.isMultiDevice && SYMBOL === this.props.playerSymbol) {
+            
+            this.stopWatch.current.reset();
+
             newState.options[index] = SYMBOL;
             newState.turn++;
             this.setState(newState);
@@ -149,6 +150,9 @@ class Grid extends React.Component {
             this.props.client.send(JSON.stringify(request));
         }
         if (!this.props.isMultiDevice) {
+
+            this.stopWatch.current.reset();
+            
             newState.options[index] = SYMBOL;
             newState.turn++;
             this.setState(newState);
